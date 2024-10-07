@@ -1,0 +1,130 @@
+[0.927s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.928s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fb96f46a080>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fb96f5ee7d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fb96f5ee7d0>>, mixin_verb=('build',))
+[1.496s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.497s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.498s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.498s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.498s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.499s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.499s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/mnt/c/Users/ljhay/hw2_angle'
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.503s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.504s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.506s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.506s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.541s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.541s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.542s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.548s] Level 1:colcon.colcon_core.package_identification:_identify(Resources) by extensions ['ignore', 'ignore_ament_install']
+[1.548s] Level 1:colcon.colcon_core.package_identification:_identify(Resources) by extension 'ignore'
+[1.550s] Level 1:colcon.colcon_core.package_identification:_identify(Resources) by extension 'ignore_ament_install'
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(Resources) by extensions ['colcon_pkg']
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(Resources) by extension 'colcon_pkg'
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(Resources) by extensions ['colcon_meta']
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(Resources) by extension 'colcon_meta'
+[1.556s] Level 1:colcon.colcon_core.package_identification:_identify(Resources) by extensions ['ros']
+[1.557s] Level 1:colcon.colcon_core.package_identification:_identify(Resources) by extension 'ros'
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(Resources) by extensions ['cmake', 'python']
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(Resources) by extension 'cmake'
+[1.565s] Level 1:colcon.colcon_core.package_identification:_identify(Resources) by extension 'python'
+[1.566s] Level 1:colcon.colcon_core.package_identification:_identify(Resources) by extensions ['python_setup_py']
+[1.567s] Level 1:colcon.colcon_core.package_identification:_identify(Resources) by extension 'python_setup_py'
+[1.572s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.572s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.574s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.578s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.579s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.581s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.589s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.590s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.592s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_homework1_python) by extensions ['ignore', 'ignore_ament_install']
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_homework1_python) by extension 'ignore'
+[1.598s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_homework1_python) by extension 'ignore_ament_install'
+[1.601s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_homework1_python) by extensions ['colcon_pkg']
+[1.602s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_homework1_python) by extension 'colcon_pkg'
+[1.603s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_homework1_python) by extensions ['colcon_meta']
+[1.604s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_homework1_python) by extension 'colcon_meta'
+[1.606s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_homework1_python) by extensions ['ros']
+[1.606s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_homework1_python) by extension 'ros'
+[1.624s] DEBUG:colcon.colcon_core.package_identification:Package 'webots_ros2_homework1_python' with type 'ros.ament_python' and name 'webots_ros2_homework1_python'
+[1.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.625s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.625s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.626s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.626s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.786s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.786s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.857s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /mnt/c/Users/ljhay/hw2_angle/install
+[1.925s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /mnt/c/Users/ljhay/f24_robotics/install
+[1.941s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 301 installed packages in /opt/ros/humble
+[1.944s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.065s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_homework1_python' build argument 'cmake_args' from command line to 'None'
+[2.066s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_homework1_python' build argument 'cmake_target' from command line to 'None'
+[2.067s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_homework1_python' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.068s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_homework1_python' build argument 'cmake_clean_cache' from command line to 'False'
+[2.068s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_homework1_python' build argument 'cmake_clean_first' from command line to 'False'
+[2.068s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_homework1_python' build argument 'cmake_force_configure' from command line to 'False'
+[2.069s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_homework1_python' build argument 'ament_cmake_args' from command line to 'None'
+[2.069s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_homework1_python' build argument 'catkin_cmake_args' from command line to 'None'
+[2.069s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_homework1_python' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.070s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_homework1_python' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/c/Users/ljhay/hw2_angle/build/webots_ros2_homework1_python', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python', 'merge_install': False, 'path': '/mnt/c/Users/ljhay/hw2_angle/webots_ros2_homework1_python', 'symlink_install': False, 'test_result_base': None}
+[2.070s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.072s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.073s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/c/Users/ljhay/hw2_angle/webots_ros2_homework1_python' with build type 'ament_python'
+[2.074s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_homework1_python', 'ament_prefix_path')
+[2.094s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/hook/ament_prefix_path.ps1'
+[2.116s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/hook/ament_prefix_path.dsv'
+[2.140s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/hook/ament_prefix_path.sh'
+[2.160s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.161s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.639s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/c/Users/ljhay/hw2_angle/webots_ros2_homework1_python'
+[3.639s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.640s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.785s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/c/Users/ljhay/hw2_angle/webots_ros2_homework1_python': PYTHONPATH=/mnt/c/Users/ljhay/hw2_angle/build/webots_ros2_homework1_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/webots_ros2_homework1_python build --build-base /mnt/c/Users/ljhay/hw2_angle/build/webots_ros2_homework1_python/build install --record /mnt/c/Users/ljhay/hw2_angle/build/webots_ros2_homework1_python/install.log --single-version-externally-managed install_data
+[8.678s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/c/Users/ljhay/hw2_angle/webots_ros2_homework1_python' returned '0': PYTHONPATH=/mnt/c/Users/ljhay/hw2_angle/build/webots_ros2_homework1_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/webots_ros2_homework1_python build --build-base /mnt/c/Users/ljhay/hw2_angle/build/webots_ros2_homework1_python/build install --record /mnt/c/Users/ljhay/hw2_angle/build/webots_ros2_homework1_python/install.log --single-version-externally-managed install_data
+[8.704s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python' for CMake module files
+[8.787s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python' for CMake config files
+[8.930s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/lib'
+[8.935s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/bin'
+[8.937s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/lib/pkgconfig/webots_ros2_homework1_python.pc'
+[8.939s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/lib/python3.10/site-packages'
+[8.942s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_homework1_python', 'pythonpath')
+[8.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/hook/pythonpath.ps1'
+[8.958s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/hook/pythonpath.dsv'
+[8.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/hook/pythonpath.sh'
+[8.988s] Level 1:colcon.colcon_core.environment:checking '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/bin'
+[8.990s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2_homework1_python)
+[8.991s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/package.ps1'
+[9.005s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/package.dsv'
+[9.019s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/package.sh'
+[9.032s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/package.bash'
+[9.045s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/package.zsh'
+[9.057s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/c/Users/ljhay/hw2_angle/install/webots_ros2_homework1_python/share/colcon-core/packages/webots_ros2_homework1_python)
+[9.066s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.068s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.068s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.069s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.128s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[9.128s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.128s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.129s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.129s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[9.130s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.130s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/c/Users/ljhay/hw2_angle/install/local_setup.ps1'
+[9.136s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/c/Users/ljhay/hw2_angle/install/_local_setup_util_ps1.py'
+[9.143s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/c/Users/ljhay/hw2_angle/install/setup.ps1'
+[9.161s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/c/Users/ljhay/hw2_angle/install/local_setup.sh'
+[9.168s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/c/Users/ljhay/hw2_angle/install/_local_setup_util_sh.py'
+[9.173s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/c/Users/ljhay/hw2_angle/install/setup.sh'
+[9.197s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/c/Users/ljhay/hw2_angle/install/local_setup.bash'
+[9.203s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/c/Users/ljhay/hw2_angle/install/setup.bash'
+[9.224s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/c/Users/ljhay/hw2_angle/install/local_setup.zsh'
+[9.231s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/c/Users/ljhay/hw2_angle/install/setup.zsh'

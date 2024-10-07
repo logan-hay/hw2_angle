@@ -1,0 +1,24 @@
+[2.899s] Invoking command in '/mnt/c/Users/ljhay/f24_robotics/webots_ros2_homework1_python': PYTHONPATH=/mnt/c/Users/ljhay/f24_robotics/build/webots_ros2_homework1_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/c/Users/ljhay/f24_robotics/install/webots_ros2_homework1_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/webots_ros2_homework1_python build --build-base /mnt/c/Users/ljhay/f24_robotics/build/webots_ros2_homework1_python/build install --record /mnt/c/Users/ljhay/f24_robotics/build/webots_ros2_homework1_python/install.log --single-version-externally-managed install_data
+[4.164s] running egg_info
+[4.174s] writing ../build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info/PKG-INFO
+[4.185s] writing dependency_links to ../build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info/dependency_links.txt
+[4.205s] writing entry points to ../build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info/entry_points.txt
+[4.213s] writing requirements to ../build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info/requires.txt
+[4.220s] writing top-level names to ../build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info/top_level.txt
+[4.306s] reading manifest file '../build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info/SOURCES.txt'
+[4.453s] writing manifest file '../build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info/SOURCES.txt'
+[4.458s] running build
+[4.460s] running build_py
+[4.491s] copying webots_ros2_homework1_python/webots_ros2_homework1_python.py -> /mnt/c/Users/ljhay/f24_robotics/build/webots_ros2_homework1_python/build/lib/webots_ros2_homework1_python
+[4.551s] running install
+[4.552s] running install_lib
+[4.620s] copying /mnt/c/Users/ljhay/f24_robotics/build/webots_ros2_homework1_python/build/lib/webots_ros2_homework1_python/webots_ros2_homework1_python.py -> /mnt/c/Users/ljhay/f24_robotics/install/webots_ros2_homework1_python/lib/python3.10/site-packages/webots_ros2_homework1_python
+[4.705s] byte-compiling /mnt/c/Users/ljhay/f24_robotics/install/webots_ros2_homework1_python/lib/python3.10/site-packages/webots_ros2_homework1_python/webots_ros2_homework1_python.py to webots_ros2_homework1_python.cpython-310.pyc
+[4.786s] running install_data
+[4.907s] running install_egg_info
+[4.925s] removing '/mnt/c/Users/ljhay/f24_robotics/install/webots_ros2_homework1_python/lib/python3.10/site-packages/webots_ros2_homework1_python-0.0.0-py3.10.egg-info' (and everything under it)
+[5.018s] Copying ../build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info to /mnt/c/Users/ljhay/f24_robotics/install/webots_ros2_homework1_python/lib/python3.10/site-packages/webots_ros2_homework1_python-0.0.0-py3.10.egg-info
+[5.424s] running install_scripts
+[5.540s] Installing webots_ros2_homework1_python script to /mnt/c/Users/ljhay/f24_robotics/install/webots_ros2_homework1_python/lib/webots_ros2_homework1_python
+[5.562s] writing list of installed files to '/mnt/c/Users/ljhay/f24_robotics/build/webots_ros2_homework1_python/install.log'
+[5.612s] Invoked command in '/mnt/c/Users/ljhay/f24_robotics/webots_ros2_homework1_python' returned '0': PYTHONPATH=/mnt/c/Users/ljhay/f24_robotics/build/webots_ros2_homework1_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/c/Users/ljhay/f24_robotics/install/webots_ros2_homework1_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/webots_ros2_homework1_python build --build-base /mnt/c/Users/ljhay/f24_robotics/build/webots_ros2_homework1_python/build install --record /mnt/c/Users/ljhay/f24_robotics/build/webots_ros2_homework1_python/install.log --single-version-externally-managed install_data

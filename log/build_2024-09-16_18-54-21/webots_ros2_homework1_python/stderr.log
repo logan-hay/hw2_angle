@@ -1,0 +1,5 @@
+  File "/mnt/c/Users/ljhay/f24_robotics/install/webots_ros2_homework1_python/lib/python3.10/site-packages/webots_ros2_homework1_python/webots_ros2_homework1_python.py", line 104
+    def get_min_cos(self, min, max, zero)
+                                         ^
+SyntaxError: expected ':'
+
