@@ -17,9 +17,9 @@ LEFT_FRONT_INDEX=150
 LEFT_SIDE_INDEX=90
 MAX_SPEED = 0.3
 
-DESIRED_ANGLE = 180
+DESIRED_ANGLE = 10
 STOP_ANGLE = 5
-MAX_TURN = 0.150
+MAX_TURN = 0.5235988
 
 class RandomWalk(Node):
 
@@ -34,12 +34,12 @@ class RandomWalk(Node):
             LaserScan,
             '/scan',
             self.listener_callback1,
-            QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT))
+            QoSProfile(depth=10, reliability=ReliabilityPolicy.RELIABLE))
         self.subscriber2 = self.create_subscription(
             Odometry,
             '/odom',
             self.listener_callback2,
-            QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT))
+            QoSProfile(depth=10, reliability=ReliabilityPolicy.RELIABLE))
         self.laser_forward = 0
         self.odom_data = 0
         self.pose_saved = ''
@@ -47,7 +47,9 @@ class RandomWalk(Node):
         self.timer = self.create_timer(0.5, self.timer_callback)
         self.angle = 0
         self.prev_angle = 0
-        self.max_angle = 0
+        self.total_angle = 0
+        self.ready = False
+        self.start = 0
 
     def listener_callback1(self, msg1):
         scan = msg1.ranges
@@ -65,32 +67,33 @@ class RandomWalk(Node):
         orientation = msg2.pose.pose.orientation
         (posx, posy, posz) = (position.x, position.y, position.z)
         (qx, qy, qz, qw) = (orientation.x, orientation.y, orientation.z * 180, orientation.w)
-        self.pose_saved = position
-        self.angle = qz
-
-    def timer_callback(self):        
-        if self.angle > self.prev_angle:
-            angle = self.angle
-            self.max_angle = angle
-        else:
-            angle = self.max_angle + (self.max_angle - self.angle)
         
-        self.get_logger().info('Angle: {} Msg: {} Prev: {}'.format(angle, self.angle, self.prev_angle))
+        if not self.ready:
+            self.start = qz
+            self.ready = True
+        
+        self.pose_saved = position
+        self.angle = qz - self.start
 
-        self.prev_angle = self.angle
+    def timer_callback(self): 
+        if self.ready:       
+            self.total_angle += math.fabs(self.angle - self.prev_angle)
+            self.prev_angle = self.angle
+            angle = self.total_angle
+            
+            self.get_logger().info('Angle: {} Msg: {} Prev: {}'.format(angle, self.angle, self.prev_angle))
 
-        if angle < DESIRED_ANGLE:
-            if angle < DESIRED_ANGLE - STOP_ANGLE:
-                self.cmd.angular.z = MAX_TURN
+            if angle < DESIRED_ANGLE:
+                if angle < DESIRED_ANGLE - STOP_ANGLE:
+                    self.cmd.angular.z = MAX_TURN
+                else:
+                    turn = max(0.15, MAX_TURN * (STOP_ANGLE - (angle - (DESIRED_ANGLE - STOP_ANGLE))) / STOP_ANGLE)
+                    self.cmd.angular.z = turn
             else:
-                turn = max(0.01, MAX_TURN * (STOP_ANGLE - (angle - (DESIRED_ANGLE - STOP_ANGLE))) / STOP_ANGLE)
-                self.cmd.angular.z = turn
-        else:
-            self.cmd.angular.z = 0.0
-        self.cmd.linear.x = 0.0
-        self.publisher_.publish(self.cmd)
+                self.cmd.angular.z = 0.0
 
-        self.prev_angle = angle
+            self.cmd.linear.x = 0.0
+            self.publisher_.publish(self.cmd)
 
 def main(args=None):
     # initialize the ROS communication
